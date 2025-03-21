@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home/X</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="5.png" type="image/svg+xml" />
+
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white font-sans">
+    <div class="flex mx-10 justify-around gap-5">
+      <div class="first m-5 lg:w-[20%] w-[3%] ">
+        <div class="sidebar fixed w-20 lg:w-[20%]">
+          <div class="logo invert">
+            <svg
+              width="30px"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+            >
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <ul class="flex flex-col text-[22px] gap-4">
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">home</span>
+              <span class="hidden lg:block">Home</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">search</span>
+              <span class="hidden lg:block">Explore</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">notifications</span>
+              <span class="hidden lg:block">Notifications</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">mail</span>
+              <span class="hidden lg:block">Messages</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">bookmark</span>
+              <span class="hidden lg:block">Bookmarks</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">list</span>
+              <span class="hidden lg:block">Lists</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">person</span>
+              <span class="hidden lg:block">Profile</span>
+            </li>
+            <li
+              class="flex items-center gap-4 w-fit hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer px-3 py-0.5"
+            >
+              <span class="material-icons cursor-pointer">more_horiz</span>
+              <span class="hidden lg:block">More</span>
+            </li>
+            <li class="flex pr-6 items-center justify-center lg:ml-[14px] gap-4  m-auto hover:bg-gray-900 hover:rounded-3xl hover:cursor-pointer "> 
+              <button class="bg-white m-auto w-[37px] h-9 text-black rounded-full text-center lg:rounded-2xl font-bold lg:w-50 lg:h-10 flex items-center justify-center cursor-pointer">
+                <span class="material-icons lg:hidden">edit_note</span>
+                <span class="hidden lg:inline">Post</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="second w-[50%] border-[1px] border-gray-700 border-t-black top-0"
+      >
+        <div
+          class="flex justify-around fixed z-10 border-b-[1px] bg-black/30 h-13 backdrop-blur-sm border-b-gray-700 top-0 w-[46.7%] items-center"
+        >
+          <div
+            class="line w-20 h-1 fixed z-10 rounded-full bg-blue-600 bottom-[89.5vh] left-[50.6vw]"
+          ></div>
+          <div class="one font-bold opacity-100">For you</div>
+          <div class="two font-bold opacity-100">Following</div>
+        </div>
+        <main>
+          <div class="card pt-4 border-black border-t-gray-700 mt-13">
+            <div class="image absolute rounded-4xl left-[25vw]">
+              <img
+                src="https://pbs.twimg.com/profile_images/1705930311966593024/uGhFBgXZ_bigger.png"
+                class="rounded-full w-10 h-10"
+                alt=""
+              />
+            </div>
+            <div class="ml-15">
+              <div class="title text-2xl">
+                <input type="text" placeholder="What's happening?!" />
+              </div>
+              <div class="clicks relative bottom-[-1vh] mt-10 p-0">
+                <!-- <div class="flex justify-evenly gap-10"> -->
+                <ul class="flex justify-start space-x-4">
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-5xl cursor-pointer"
+                      >image</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-2xl cursor-pointer"
+                      >gif</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-2xl cursor-pointer"
+                      >visibility_off</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-2xl cursor-pointer"
+                      >poll</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-2xl cursor-pointer"
+                      >sentiment_satisfied</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-2xl cursor-pointer"
+                      >event</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="material-icons text-blue-400 text-2xl cursor-pointer"
+                      >location_on</span
+                    >
+                  </li>
+                </ul>
+                <button
+                  class="bg-gray-400 text-black p-2 px-3 rounded-3xl relative top-[-6vh] right-[-24vw] font-bold"
+                >
+                  Post
+                </button>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card border-[1px] border-black border-t-gray-700 text-blue-600 hover:cursor-pointer text-center p-4.5"
+          >
+            Show 132 posts
+          </div>
+
+          <div
+            class="card border-[1px] p-14 pt-3 pr-4 border-black border-t-gray-700"
+          >
+            <div class="image absolute rounded-4xl left-[25vw]">
+              <img
+                src="https://pbs.twimg.com/profile_images/1705930311966593024/uGhFBgXZ_bigger.png"
+                class="rounded-full w-10 h-10"
+                alt=""
+              />
+            </div>
+            <div class="title flex text-2xl gap-6">
+              <div class="flex justify-start items-center gap-1">
+                <div class="text-[16px] font-bold">zhill</div>
+                <span
+                  class="material-icons text-blue-500 text-[15px] cursor-pointer"
+                  >verified</span
+                >
+
+                <div class="text-sm w-106 text-gray-600">
+                  @zhill_arf &middot; 3h
+                </div>
+              </div>
+              <div class="">
+                <div>
+                  <span
+                    class="material-icons text-blue-500 text-[15px] cursor-pointer"
+                    >more_horiz</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              Take control of your gold trading costs. Save on every trade with
+              the tightest and most stable spreads in the market.
+            </div>
+
+            <img src="1.png" class="rounded-2xl m-2 w-150" />
+            <div class="m-3">
+              <div class="flex justify-around gap-14">
+                <ul class="text-gray-400 flex justify-around gap-13">
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >chat_bubble_outline</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >repeat</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >favorite_border</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >bar_chart</span
+                    >
+                  </li>
+                </ul>
+                <ul class="flex items-center">
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >bookmark_border</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >ios_share</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card border-[1px] p-14 pt-3 pr-4 border-black border-t-gray-700"
+          >
+            <div class="image absolute rounded-4xl left-[25vw]">
+              <img
+                src="https://pbs.twimg.com/profile_images/1705930311966593024/uGhFBgXZ_bigger.png"
+                class="rounded-full w-10 h-10"
+                alt=""
+              />
+            </div>
+            <div class="title flex text-2xl gap-6">
+              <div class="flex justify-start items-center gap-1">
+                <div class="text-[16px] font-bold">zhill</div>
+                <span
+                  class="material-icons text-blue-500 text-[15px] cursor-pointer"
+                  >verified</span
+                >
+
+                <div class="text-sm w-106 text-gray-600">
+                  @zhill_arf &middot; 3h
+                </div>
+              </div>
+              <div class="">
+                <div>
+                  <span
+                    class="material-icons text-blue-500 text-[15px] cursor-pointer"
+                    >more_horiz</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              Take control of your gold trading costs. Save on every trade with
+              the tightest and most stable spreads in the market.
+            </div>
+
+            <img src="1.png" class="rounded-2xl m-2 w-150" />
+            <div class="m-3">
+              <div class="flex justify-around gap-14">
+                <ul class="text-gray-400 flex justify-around gap-13">
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >chat_bubble_outline</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >repeat</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >favorite_border</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >bar_chart</span
+                    >
+                  </li>
+                </ul>
+                <ul class="flex items-center">
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >bookmark_border</span
+                    >
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined cursor-pointer"
+                      >ios_share</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="third w-[30%] bg-black">
+        <div class="bg-black fixed py-1.5 w-[22.5%]">
+          <span
+            class="material-icons text-gray-400 text-lg absolute left-3 top-1/2 transform -translate-y-1/2"
+          >
+            search
+          </span>
+          <input
+            type="text"
+            placeholder="Search"
+            class="border border-gray-500 rounded-full pl-10 pr-4 py-2 w-full ml-2 outline-none"
+          />
+        </div>
+        <div
+          class="mt-14 premium flex flex-col gap-3 border-[1px] rounded-2xl border-gray-700 p-3 m-3 w-[90%]"
+        >
+          <h1 class="text-2xl font-bold">Subscribe to premium</h1>
+          <p>
+            Subscribe to unlock new features and if eligible, receive a share of
+            revenue.
+          </p>
+          <button
+            class="bg-blue-400 w-1/2 text-white rounded-3xl px-3 py-1 font-bold"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <div
+          class="premium flex flex-col gap-3 border-[1px] rounded-2xl border-gray-700 p-3 m-3 w-[90%]"
+        >
+          <h1>What's happening</h1>
+          <p>
+            Subscribe to unlock new features and if eligible, receive a share of
+            revenue.
+          </p>
+        </div>
+
+        <div
+          class="w-[90%] bg-black border-[1px] rounded-2xl border-gray-700 text-white rounded-2xl p-3 m-3"
+        >
+          <h2 class="text-xl font-bold">What's happening</h2>
+
+          <div class="flex space-x-3 items-start mt-4">
+            <img src="3.png" class="rounded-lg w-19 h-19" />
+            <div>
+              <p class="font-bold">From the Desk of Anthony Pompliano</p>
+              <span class="text-gray-400 text-sm">LIVE</span>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="hover:bg-gray-800 p-2 rounded-lg">
+              <p class="text-gray-400 text-xs">Politics · Trending</p>
+              <p class="font-bold">Fetterman</p>
+              <p class="text-gray-500 text-sm">12.3K posts</p>
+            </div>
+
+            <div class="hover:bg-gray-800 p-2 rounded-lg">
+              <p class="text-gray-400 text-xs">Trending</p>
+              <p class="font-bold">Marathi</p>
+              <p class="text-gray-500 text-sm">8,841 posts</p>
+            </div>
+
+            <div class="hover:bg-gray-800 p-2 rounded-lg">
+              <p class="text-gray-400 text-xs">Trending</p>
+              <p class="font-bold">#TrumpTariffs</p>
+              <p class="text-gray-500 text-sm">8,741 posts</p>
+            </div>
+
+            <div class="hover:bg-gray-800 p-2 rounded-lg">
+              <p class="text-gray-400 text-xs">Entertainment · Trending</p>
+              <p class="font-bold">#AliaBhatt</p>
+              <p class="text-gray-500 text-sm">1,880 posts</p>
+            </div>
+          </div>
+
+          <a href="#" class="text-blue-400 text-sm hover:underline block"
+            >Show more</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
