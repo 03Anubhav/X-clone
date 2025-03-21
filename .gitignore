@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+src/output.css
+dist/
+.vscode/
+.env
+.DS_Store
